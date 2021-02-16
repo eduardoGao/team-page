@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body {
+  /*background: cadetblue;*/
+  width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+section h1 {
+  font-size: 36px;
+}
+
+section div {
+  width: 350px;
+  margin-right: 8em;
+}
+
+section div h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+main {
+  margin: 5em auto;
+  display: grid;
+  height: 950px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 12.5% 25% 12.5% 12.5% 25% 12.5%;
+}
+
+.photo-wrapper {
+  position: relative;
+  width: 238px;
+}
+
+.photo-wrapper img {
+  width: 100%;
+}
+
+.photo-wrapper h2 {
+  font-size: 18px;
+  margin-top: .3em;
+}
+
+.absolute {
+  position: absolute;
+  top: 34px;
+  right: -73px;
+}
+
+.photo-wrapper p {
+  transform: rotate(90deg);
+}
+
+.two {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.three {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+.four {
+  grid-row-start: 4;
+  grid-column-start: 1;
+}
+
+.five {
+  grid-row-start: 5;
+  grid-column-start: 2;
+}
+
+.six {
+  grid-row-start: 4;
+  grid-column-start: 3;
+}
+
+/*Footer*/
+footer {
+  display: grid;
+  padding: 1.5em 0;
+}
+
+footer p {
+  place-self: center;
+}
+
+/*Responsive*/
